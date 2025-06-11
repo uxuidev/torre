@@ -61,10 +61,23 @@ export default function Home() {
     return levelMapping[s.level] || 0;
   }); */
 
-  const colors = ["#ABF6384", "#CDA2EB", "#99CE56", "#00AF50", "#5527B0", "#FF6999", "#36ABBB", "#FFCAAA", "#4CA229", "#9C2432", "#FF6384", "#36A2EB", "#FFCE56", "#4CAF50", "#9C27B0"];
-
-  const barlabels = ["January", "February", "March", "April", "May", "June", "July"];
-  const chartData = [65, 59, 80, 81, 56, 55, 40];
+  const colors = [
+    "#A8DADC", // Soft teal
+    "#F1FAEE", // Gentle off-white
+    "#5D81E1", // Deeper blue
+    "#6FCF97", // Fresh mint green
+    "#F79F98", // Warm coral
+    "#D980FA", // Rich lavender
+    "#E1C340", // Muted gold
+    "#4895EF", // Vivid sky blue
+    "#FF6B6B", // Bold red
+    "#5E548E", // Deep purple
+    "#F4A261", // Earthy orange
+    "#39A2DB", // Ocean blue
+    "#8D6E63", // Warm taupe
+    "#B388FF", // Vibrant violet
+    "#43AA8B", // Deep emerald green
+  ];
 
   useEffect(() => {
     fetchSkills();
