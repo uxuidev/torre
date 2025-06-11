@@ -7,6 +7,220 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
+$col1: #333366;
+$col2: #9999CC;
+$col3: #FFF8DC;
+$col4: #CDB99C;
+$col5: #996600;
+$col6: #FF9900;
+$col7: #6699FF;
+
+$grad1: linear-gradient(to bottom right, $col3 35%, $col5);
+$grad2: linear-gradient(to left, $col3 25%, $col1);
+$grad3: radial-gradient(circle, $col3 50%, $col5);
+$grad4: linear-gradient(to left, $col3 25%, $col3);
+
+$cardbg: #D2EBE750;
+$grad: linear-gradient(to right, $col1, $col2, $col1);
+
+$t: rgba(255, 255, 255, 0);
+
+$tabH: 25px;
+$tabW: 80px;
+
+
+///// HEADER /////
+.header {
+    //min-height: 200px;
+    background-image: $grad1;
+    color: white;
+    //border-top-left-radius: 20px;
+    //border-top-right-radius: 20px;
+    //position:fixed;
+}
+
+.header-logo {
+    max-height: 50px;
+    //border-radius: 45px;
+    max-width: 50px;
+    height: auto;
+    width: auto;
+}
+
+.company-name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: $col1;
+    margin-left: -3px;
+}
+
+.header-tagline {
+    font-size: 12px;
+    letter-spacing: 5px;
+    //font-weight: bold;
+    color: $col1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 1px 1px 1px $col3;
+}
+
+.header-link>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.header-link>a:hover {
+    font-weight: bold !important;
+}
+
+.btn-booking {
+    width: auto;
+    //padding: 15px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    height: 24px;
+    background-color: white;
+    font-size: 11px;
+}
+
+.top-bar {
+    //height: 45px;
+    padding: 5px 0 35px;
+}
+
+.top-bar>a {
+    font-size: 12px;
+    text-decoration: none;
+    color: $col1;
+    cursor: pointer;
+    padding: 3px 9px;
+    //text-shadow: 1px 1px 1px $col3;
+}
+
+.top-bar>a:hover {
+    color: $col5;
+    //font-weight: bold;
+    //text-shadow: 1px 1px 1px $col1;
+}
+
+.bottom-bar {
+    height: 25px;
+}
+
+.bottom-bar>div {
+    display: inline-block;
+    padding: 0 3px;
+    margin: 0 1px;
+    border: 1px solid $col2;
+    border-radius: 3px;
+    width: 60px;
+}
+
+.bottom-bar>div>a {
+    font-size: 10px;
+    text-decoration: none;
+    color: $col1;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bottom-bar>div>a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px $col1;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.btn-header {    
+    font-size: 11px;
+    padding: 1px;
+    border: 1px solid $col4;
+    width: 70px;
+    text-align: center;
+}
+.btn-sign {
+    color: $col3;
+    background-color: $col5;
+    margin-top: 10px;
+}
+
+.btn-quote {
+    display: none;
+    color: $col5;
+    background-color: $col3;
+}
+
+.btn-quote:hover, .btn-sign:hover {
+    color: $col3;
+    background-color: $col1;
+    cursor: pointer;    
+}
+
+@media (min-width: 400px) {
+    .btn-quote {
+        display: block;
+    }
+}
+
+.tab-stripe {
+    height: 25px;
+    background-color: $col3;
+    border-top: 1px solid $col5;
+    position: relative;
+    justify-content: center;
+    //box-shadow: 1px 1px 1px 1px gray;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    border: none;
+}
+
+.btn-tab {
+    border-left: 1px solid $col5;
+    border-top: 1px solid $col5;
+    margin-top: -25px;
+    height: $tabH;
+    width: $tabW;
+    text-align: center;
+    background-color: $col3;
+    cursor: pointer;
+    transition: height 0.3s, top 0.3s, margin-top 0.3s, top 0.3s;
+}
+
+.btn-tab>a {
+    padding-top: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $col5;
+    text-decoration: none;
+}
+
+.btn-tab:hover {
+    height: 32px;
+    margin-top: -32px;
+}
+
+.tab-last {
+    border-right: 1px solid $col5;
+}
+
+.welcome-text {
+    color: $col3;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+//--- HEADER ---//
+
+
 .barchart-container {
   display: flex;
   flex-direction: column;

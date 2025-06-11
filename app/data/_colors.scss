@@ -5,3 +5,16 @@ $col4: #CDB99C;
 $col5: #996600;
 $col6: #FF9900;
 $col7: #6699FF;
+
+$grad1: linear-gradient(to bottom right, $col3 35%, $col5);
+$grad2: linear-gradient(to left, $col3 25%, $col1);
+$grad3: radial-gradient(circle, $col3 50%, $col5);
+$grad4: linear-gradient(to left, $col3 25%, $col3);
+
+$cardbg: #D2EBE750;
+$grad: linear-gradient(to right, $col1, $col2, $col1);
+
+$t: rgba(255, 255, 255, 0);
+
+$tabH: 25px;
+$tabW: 80px;

@@ -79,7 +79,7 @@ export default function Home() {
           {skills.length > 0 ? (
             <Piechart lbl={labels} data={skillCount} colours={colors} pieAR={1} title="Skill Distribution" titleColor="black" lblColor="gray" />
           ) : (
-            <p>Loading...</p>
+            <p className="text-center">Loading...</p>
           )}
         </div>
         <div className="col-12 col-md-6 barchart-container">
@@ -87,7 +87,7 @@ export default function Home() {
           {skills.length > 0 ? (
             <BarChart lblData={labels} chartData={skillCount} title="Users count with specific skill" />
           ) : (
-            <p>Loading...</p>
+            <p className="text-center">Loading...</p>
           )}
         </div>
       </div>
