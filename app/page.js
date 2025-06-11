@@ -2,6 +2,7 @@
 //import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import Piechart from "./data/visuals/Piechart";
+import BarChart from "./data/visuals/Barchart";
 
 export default function Home() {
   const [skills, setSkills] = useState([]);
@@ -62,6 +63,9 @@ export default function Home() {
 
   const colors = ["#ABF6384", "#CDA2EB", "#99CE56", "#00AF50", "#5527B0", "#FF6999", "#36ABBB", "#FFCAAA", "#4CA229", "#9C2432", "#FF6384", "#36A2EB", "#FFCE56", "#4CAF50", "#9C27B0"];
 
+  const barlabels = ["January", "February", "March", "April", "May", "June", "July"];
+  const chartData = [65, 59, 80, 81, 56, 55, 40];
+
   useEffect(() => {
     fetchSkills();
   }, [])
@@ -71,7 +75,7 @@ export default function Home() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-12 col-md-6">
-          <h1 className="text-center">Skills Pie Chart</h1>
+          <h1 className="text-center">Pie Chart</h1>
           {skills.length > 0 ? (
             <Piechart lbl={labels} data={skillCount} colours={colors} pieAR={1} title="Skill Distribution" titleColor="black" lblColor="gray" />
           ) : (
@@ -79,9 +83,9 @@ export default function Home() {
           )}
         </div>
         <div className="col-12 col-md-6">
-          <h1 className="text-center">Skills Pie Chart</h1>
+          <h1 className="text-center">Bar Chart</h1>
           {skills.length > 0 ? (
-            <Piechart lbl={labels} data={skillCount} colours={colors} pieAR={1} title="Skill Distribution" titleColor="black" lblColor="gray" />
+            <BarChart lblData={labels} chartData={skillCount} title="Users count with specific skill" />
           ) : (
             <p>Loading...</p>
           )}
