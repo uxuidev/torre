@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-12 col-md-6 chart-container">
+        <div className="col-12 col-md-6 chart-container border-end p-5">
           <h1 className="text-center">Pie Chart</h1>
           {skills.length > 0 ? (
             <Piechart lbl={labels} data={skillCount} colours={colors} pieAR={1} title="Skill Distribution" titleColor="black" lblColor="gray" />
@@ -82,7 +82,7 @@ export default function Home() {
             <p className="text-center">Loading...</p>
           )}
         </div>
-        <div className="col-12 col-md-6 barchart-container">
+        <div className="col-12 col-md-6 barchart-container border-start p-5">
           <h1 className="text-center">Bar Chart</h1>
           {skills.length > 0 ? (
             <BarChart lblData={labels} chartData={skillCount} title="Users count with specific skill" />

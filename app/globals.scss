@@ -229,3 +229,125 @@ $tabW: 80px;
   //height: 100%; /* Ensure the container fills its parent */
 }
 
+/////////////////////////////////////
+
+///// FOOTER /////
+.footer {
+    width: 100%;
+    //height: 150px;
+    background-image: $grad4;
+    //border-top-left-radius: 50%;
+    //border-top-right-radius: 50%;
+    border-top-left-radius: 80%;
+    padding-top: 40px;
+}
+
+.footer-logo {
+    max-height: 100px;
+    //border-radius: 45px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: $col1;
+    font-family: 'Ubuntu';
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-headings {
+    font-size: 16px;
+    font-weight: bold;
+    color: $col1;
+    text-align: center;
+}
+
+.footer-headings~div {
+    border-bottom: 1px solid $col5;
+    width: 70px;
+    margin: auto;
+}
+
+.footer-headings~div>a {
+    font-size: 13px;
+    color: $col1;
+    text-decoration: none;
+}
+
+.footer-headings~div>a:hover {
+    color: $col5;
+}
+
+.ico-fb {
+    color: #3b5998;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.ico-insta {
+    color: #c32aa3;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.ico-li {
+    color: #0a66c2;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    color: $col1;
+}
+
+//////////////////////////////////////
+
+
+@media screen and (min-width: 768px) {
+
+    //md
+    .top-bar>a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    //medium or higher
+
+    .company-bg-dark,
+    .company-bg-light {
+        margin: 10px 20%;
+    }
+
+    .company-name {
+        font-size: 24px;
+    }
+
+    .company-tag {
+        font-size: 32px;
+        padding: 15px 20%;
+    }
+
+    .company-text {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .bottom-bar>div {
+        width: 80px;
+    }
+
+    .bottom-bar>div>a {
+        font-size: 12px;
+    }
+
+    .btn-login-out>span {
+        font-size: 12px;
+    }
+}
+
+////////////////////////////
