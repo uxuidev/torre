@@ -82,7 +82,7 @@ export default function Home() {
             <p>Loading...</p>
           )}
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 barchart-container">
           <h1 className="text-center">Bar Chart</h1>
           {skills.length > 0 ? (
             <BarChart lblData={labels} chartData={skillCount} title="Users count with specific skill" />
