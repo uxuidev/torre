@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 chart-container">
           <h1 className="text-center">Pie Chart</h1>
           {skills.length > 0 ? (
             <Piechart lbl={labels} data={skillCount} colours={colors} pieAR={1} title="Skill Distribution" titleColor="black" lblColor="gray" />

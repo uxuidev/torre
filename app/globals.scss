@@ -9,8 +9,9 @@
 
 .barchart-container {
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  //align-items: center; /* Centers vertically */
   //height: 100%; /* Ensure the container fills its parent */
 }
 

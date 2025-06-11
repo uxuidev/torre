@@ -45,7 +45,7 @@ const Piechart = (props) => {
         aspectRatio: props.pieAR,
         plugins: {
             legend: {
-                position: 'top',
+                position: 'left',
                 labels : {
                     color: props.lblColor,
                 }
