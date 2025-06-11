@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model TorreUser {
+  id          Int      @id @default(autoincrement())
+  full_name   String?
+  email       String   @unique
+  password    String?
+  login_token String?
+  access_token String?
+  role        String
+  city        String?
+  country     String?
+  created_at  DateTime @default(now()) @db.Timestamp(0)
+  updated_at  DateTime @default(now()) @updatedAt @db.Timestamp(0)
+
+  skills      Skill[]  @relation("torre_skills")
+
+  @@map("torre_users")
+}
+
+model Skill {
+  id         Int      @id @default(autoincrement())
+  user_id    Int
+  skill      String
+  level      String 
+  created_at DateTime @default(now()) @db.Timestamp(0)
+  updated_at DateTime @default(now()) @updatedAt @db.Timestamp(0)
+
+  torreUser  TorreUser @relation("torre_skills", fields: [user_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@unique([user_id, skill])
+  @@map("torre_skills")
+}
