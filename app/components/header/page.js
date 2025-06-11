@@ -15,9 +15,9 @@ const Header = () => {
                 <div className="col-8 col-md-6">
                     <div className="row">
                         <div className="col-12 text-center top-bar">
-                            <Link href="/#home">Admin</Link>
-                            <Link href="/#testimonial">Add User</Link>
-                            <Link href="/#services">Search User</Link>
+                            <Link href="/#">Admin</Link>
+                            <Link href="/#user">Add User</Link>
+                            <Link href="/#serch">Search User</Link>
                         </div>
                     </div>
                 </div>
@@ -29,9 +29,9 @@ const Header = () => {
             </div>
             <div className="row tab-stripe">
                 <div className="col-12 col-md-6 col-lg-4 tab-container">
-                    <div className="btn-tab"><Link href="/hire">Users</Link></div>
-                    <div className="btn-tab"><Link href="/faq">FAQ</Link></div>
-                    <div className="btn-tab tab-last"><Link href="/contact">Contact</Link></div>
+                    <div className="btn-tab"><Link href="/#hire">Users</Link></div>
+                    <div className="btn-tab"><Link href="/#faq">FAQ</Link></div>
+                    <div className="btn-tab tab-last"><Link href="/#contact">Contact</Link></div>
                 </div>
             </div>
         </div>
